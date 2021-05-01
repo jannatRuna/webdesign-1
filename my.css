@@ -1417,14 +1417,60 @@ section#pic_Text {
     float: left;
 }
 
-i.far.fa-play-circle {
-    width: 100px;
-    height: 100px;
-    font-size: 100px;
-    margin-left: 215px;
-    margin-top: 170px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+.pulse{
+        height: 150px;
+        width: 150px;
+        background:#fff;
+        position:absolute;
+        margin:auto;
+        top: 2690px;
+        left: 0px;
+        right: 550px;
+        bottom:0;
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        -ms-border-radius:50%;
+        -o-border-radius:50%;
+        font-size: 35px;
+        color:rgb(20, 7, 141);
+        display: grid;
+        place-items: center;
+    }
+
+
+.pulse::before,
+.pulse::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    opacity: 0.7;
+}
+
+.pulse::before{
+    animation: pulse 2s ease-out infinite;
+    -webkit-animation: pulse 2s ease-out infinite;
+}
+.pulse::after{
+    animation: pulse 2s ease-out infinite;
+    -webkit-animation: pulse 2s ease-out infinite;
+}
+@keyframes pulse{
+    100%{
+        transform: scale(2.5);
+        -webkit-transform: scale(2.5);
+        -moz-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+        -o-transform: scale(2.5);
+        opacity: 0;
+}
 }
 
 .text1 {
@@ -2305,11 +2351,11 @@ div#justSubmit .secendContan1 {
 }
 
 .mobail4Add {
-    width: 40%;
+    width: 48%;
     height: auto;
     float: right;
     position: absolute;
-    right: 220px;
+    right: 35px;
     bottom: -50px;
     z-index: 5;
 }
