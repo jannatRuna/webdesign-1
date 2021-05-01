@@ -1415,6 +1415,7 @@ section#pic_Text {
     background-size: cover;
     background-repeat: no-repeat;
     float: left;
+    position: relative;
 }
 
 .pulse{
@@ -1423,10 +1424,11 @@ section#pic_Text {
         background:#fff;
         position:absolute;
         margin:auto;
-        top: 2690px;
-        left: 0px;
-        right: 550px;
-        bottom:0;
+        top: 50%;
+        left: 50%;
+        /* right: 0; */
+        /* bottom:0; */
+        transform: translate(-50%, -50%);
         border-radius:50%;
         -webkit-border-radius:50%;
         -moz-border-radius:50%;
